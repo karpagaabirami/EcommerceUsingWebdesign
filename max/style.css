@@ -1,0 +1,219 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+   
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.nav-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: darkblue;
+}
+.navbar-links a:hover{
+    text-decoration:underline ;
+    color: darkblue;
+
+}
+.menu-icon {
+    cursor: pointer;
+  }
+  
+  .menu-icon i {
+    font-size: 24px; 
+  }
+.side-navbar{
+    background-color: darkblue;
+    width: 50%;
+    padding: 20px;
+   
+    left: -60%;
+    color: white;
+    position: sticky;
+    height: 100% ;
+    display: none;
+    top: 0;
+    transition: 2s;
+}
+.side-navbar-link{
+    margin-bottom: 40px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+  
+
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+   color:white;
+}
+
+
+
+
+
+
+
+
+
+    
+   
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color:darkblue ;
+    color:white ;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.service{
+    padding: 30px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container-2 div{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis:300px ;
+}
+.new-arrival button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 1px;
+    color: darkblue;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.news input{
+    padding:12px ;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: whitesmoke;
+    background-color:black;
+    border-radius: 10px;
+    padding: 10px;
+    
+
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+.prodct-section{
+    margin-top: 20px;
+}
+.product-search{
+  width: 80%;
+  border: solid black 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: auto;  
+
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100px;
+
+}
+.product-search input:focus{
+    outline: none;
+}
+.Products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img{
+    border-radius: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+    
+}
